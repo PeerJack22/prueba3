@@ -56,6 +56,8 @@ public class ventanaDatos extends ventanaLogin {
                     ps.setDouble(5, materia3);
                     ps.setDouble(6, materia4);
                     ps.setDouble(7, materia5);
+                    ps.executeUpdate();
+
 
                     lbConfirma.setText("Los datos se han insertado correctamente");
 
