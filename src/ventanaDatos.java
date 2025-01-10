@@ -90,6 +90,7 @@ public class ventanaDatos extends ventanaLogin {
                 text3.setText("");
                 text4.setText("");
                 text5.setText("");
+                lbConfirma.setText("");
             }
         });
     }
