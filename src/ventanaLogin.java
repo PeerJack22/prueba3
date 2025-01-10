@@ -26,6 +26,7 @@ public class ventanaLogin {
 
                 Connection conn = null;
                 PreparedStatement ps = null;
+                ResultSet rs = null;
 
                 String usuarioLogin = textUsuario.getText();
                 String passwordLogin = textPassword.getText();
@@ -35,16 +36,16 @@ public class ventanaLogin {
                     conn = DriverManager.getConnection(url, user, password);
                     System.out.println("Se ha conectado correctamente a la base de datos");
 
-//                    String query = "SELECT * FROM usuarios WHERE username = ?";
-//                    PreparedStatement pstmt = conn.prepareStatement(query);
-//                    ResultSet userTrue = pstmt.executeQuery();
-//
-//                    String query1 = "SELECT * FROM usuarios WHERE password = ?";
-//                    PreparedStatement pstmt1 = conn.prepareStatement(query1);
-//                    ResultSet paswwordTrue = pstmt1.executeQuery();
+
+                    // Consulta para verificar usuario y contraseña
+                    String query = "SELECT * FROM usuarios WHERE username = ? AND password = ?";
+                    ps = conn.prepareStatement(query);
+                    ps.setString(1, usuarioLogin);
+                    ps.setString(2, passwordLogin);
+                    rs = ps.executeQuery();
 
 
-                    if (usuarioLogin.equals(user) && passwordLogin.equals(password)) {
+                    if (rs.next()) {
                         JFrame ventana = new JFrame("Registrar datos");
                         ventana.setContentPane(new ventanaDatos().datosPanel);
                         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
