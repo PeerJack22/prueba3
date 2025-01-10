@@ -35,16 +35,16 @@ public class ventanaLogin {
                     conn = DriverManager.getConnection(url, user, password);
                     System.out.println("Se ha conectado correctamente a la base de datos");
 
-                    String query = "SELECT * FROM usuarios WHERE username = ?";
-                    PreparedStatement pstmt = conn.prepareStatement(query);
-                    ResultSet userTrue = pstmt.executeQuery();
+//                    String query = "SELECT * FROM usuarios WHERE username = ?";
+//                    PreparedStatement pstmt = conn.prepareStatement(query);
+//                    ResultSet userTrue = pstmt.executeQuery();
+//
+//                    String query1 = "SELECT * FROM usuarios WHERE password = ?";
+//                    PreparedStatement pstmt1 = conn.prepareStatement(query1);
+//                    ResultSet paswwordTrue = pstmt1.executeQuery();
 
-                    String query1 = "SELECT * FROM usuarios WHERE password = ?";
-                    PreparedStatement pstmt1 = conn.prepareStatement(query1);
-                    ResultSet paswwordTrue = pstmt1.executeQuery();
 
-
-                    if (usuarioLogin.equals(userTrue) && passwordLogin.equals(paswwordTrue)) {
+                    if (usuarioLogin.equals(user) && passwordLogin.equals(password)) {
                         JFrame ventana = new JFrame("Registrar datos");
                         ventana.setContentPane(new ventanaDatos().datosPanel);
                         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

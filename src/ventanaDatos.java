@@ -46,7 +46,7 @@ public class ventanaDatos extends ventanaLogin {
                     System.out.println("Se ha conectado correctamente a la base de datos");
 
                     // Insertar datos en la base
-                    String sql = "INSERT INTO usuarios (cedula,nombre,materia1,materia2,materia3,materia4,materia5) VALUES(?,?,?,?,?,?,?)";
+                    String sql = "INSERT INTO estudiantes (cedula,nombre,materia1,materia2,materia3,materia4,materia5) VALUES(?,?,?,?,?,?,?)";
 
                     ps = conn.prepareStatement(sql);
                     ps.setString(1, cedula);
@@ -57,8 +57,7 @@ public class ventanaDatos extends ventanaLogin {
                     ps.setDouble(6, materia4);
                     ps.setDouble(7, materia5);
 
-                    int filasInsertadas = ps.executeUpdate();
-                    lbConfirma.setText("Filas insertadas: " + filasInsertadas + "los datos se han insertado correctamente");
+                    lbConfirma.setText("Los datos se han insertado correctamente");
 
                 }catch (SQLException esq){
                     esq.printStackTrace();

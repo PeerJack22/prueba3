@@ -84,6 +84,7 @@
         </constraints>
         <properties>
           <font size="16"/>
+          <toolTipText value="Solo ingresar 10 dígitos"/>
         </properties>
       </component>
       <component id="83239" class="javax.swing.JTextField" binding="textNombre">
@@ -94,6 +95,7 @@
         </constraints>
         <properties>
           <font size="16"/>
+          <toolTipText value="Ingrese su nombre (Nombre,Apellido)"/>
         </properties>
       </component>
       <component id="a7981" class="javax.swing.JTextField" binding="text1">
@@ -104,6 +106,7 @@
         </constraints>
         <properties>
           <font size="16"/>
+          <toolTipText value="Solo números del 0 al 20"/>
         </properties>
       </component>
       <component id="692ba" class="javax.swing.JTextField" binding="text2">
@@ -114,6 +117,7 @@
         </constraints>
         <properties>
           <font size="16"/>
+          <toolTipText value="Solo números del 0 al 20"/>
         </properties>
       </component>
       <component id="8b8de" class="javax.swing.JTextField" binding="text3">
@@ -124,6 +128,7 @@
         </constraints>
         <properties>
           <font size="16"/>
+          <toolTipText value="Solo números del 0 al 20"/>
         </properties>
       </component>
       <component id="dbe06" class="javax.swing.JTextField" binding="text4">
@@ -134,6 +139,7 @@
         </constraints>
         <properties>
           <font size="16"/>
+          <toolTipText value="Solo números del 0 al 20"/>
         </properties>
       </component>
       <component id="c0171" class="javax.swing.JTextField" binding="text5">
@@ -144,6 +150,7 @@
         </constraints>
         <properties>
           <font size="16"/>
+          <toolTipText value="Solo números del 0 al 20"/>
         </properties>
       </component>
       <component id="d4520" class="javax.swing.JButton" binding="ingresarButton" default-binding="true">
