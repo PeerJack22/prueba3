@@ -38,6 +38,7 @@ Nos da un mensaje de confirmación para saber si se agregaron los datos a la bas
 
 ![{568DE4A5-645E-4DAA-A5E8-74CBD1738E32}](https://github.com/user-attachments/assets/81760449-22c2-40a5-8270-9eddacc357ab)
 
+Tambien agregue un botón para limpiar los datos y ingresar nuevos.
 
 
 
